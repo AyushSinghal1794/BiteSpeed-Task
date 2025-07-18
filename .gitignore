@@ -1,0 +1,7 @@
+# Env files
+.env
+VNV/
+db.sqlite3
+*.py[cod]
+*.egg
+*.egg-info/
