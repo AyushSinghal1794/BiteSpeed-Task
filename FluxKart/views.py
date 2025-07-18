@@ -1,10 +1,15 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.db.models import Q
 from django.db import transaction, IntegrityError
 import json
 
 from .models import Contact
+
+def HomePage(request):
+    return HttpResponse("<h1>Welcome to the Identity Reconciliation API\
+This is a submission for the BiteSpeed backend task.\
+Use the /identify endpoint with a JSON body to test identity resolution")
 
 @csrf_exempt
 def identify(request):
