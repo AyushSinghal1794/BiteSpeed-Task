@@ -7,9 +7,36 @@ import json
 from .models import Contact
 
 def HomePage(request):
-    return HttpResponse("<h1>Welcome to the Identity Reconciliation API\
-This is a submission for the BiteSpeed backend task.\
-Use the /identify endpoint with a JSON body to test identity resolution")
+    return HttpResponse("""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Identity Reconciliation API</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 40px;
+                    background-color: #f9f9f9;
+                    color: #333;
+                }
+                h1 {
+                    color: #4CAF50;
+                }
+                code {
+                    background-color: #eee;
+                    padding: 2px 4px;
+                    border-radius: 4px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Welcome to the Identity Reconciliation API</h1>
+            <p>This is a submission for the <strong>BiteSpeed</strong> backend task.</p>
+            <p>Use the <code>/identify</code> endpoint with a <strong>POST</strong> request and JSON body.</p>
+        </body>
+        </html>
+    """)
+
 
 @csrf_exempt
 def identify(request):
