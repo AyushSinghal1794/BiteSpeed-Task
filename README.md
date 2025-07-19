@@ -11,4 +11,5 @@ This repository contains the backend solution for the BiteSpeed Identity Reconci
 
 ## Live Demo
 
-🔗 **Endpoint:** [`https://bitespeed-task-6s5d.onrender.com/identify`](https://bitespeed-task-6s5d.onrender.com/identify)
+
+🔗 **Base URL:** [`https://bitespeed-task-6s5d.onrender.com`](https://bitespeed-task-6s5d.onrender.com)
